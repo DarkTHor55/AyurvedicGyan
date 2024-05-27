@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Signup - AyurvedicGyan</title>
+</head>
+
+<body>
+	<h2>Signup - AyurvedicGyan</h2>
+	<form th:action="@{/signup}" method="post">
+		<div class="form-group">
+			<label for="Email">Email:</label>
+			<input type="email" class="form-control" id="Email" name="Email" required="required">
+			<br>
+			<label for="name">FullName:</label>
+			<input type="text" class="form-control" id="FullName" name="FullName" required="required">
+			<br>
+			<label for="username">Username:</label>
+			<input type="text" class="form-control" id="username" name="username" required="required">
+			<br>
+			<label for="password">Password:</label>
+			<input type="password" class="form-control" id="password" name="password" required="required">
+		</div>
+		<button type="submit" class="btn btn-primary">Signup</button>
+	</form>
+</body>
+
+</html>
